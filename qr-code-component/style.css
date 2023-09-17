@@ -57,9 +57,9 @@ font-size: 21px;
 
 
 }
-.content .heading h3{
+.content .heading h1{
     font-family: 'Outfit', sans-serif;
-    font-size: 0.91em;
+    font-size: 0.60em;
     color:hsl(218, 44%, 22%);
 }
 
