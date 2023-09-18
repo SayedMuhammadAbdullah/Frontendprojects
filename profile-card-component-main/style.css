@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{padding: 0;margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main{
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+   background-position: -90% -500px, 170% 400px;
+   background-repeat: no-repeat;
+   background-color:  hsl(185, 75%, 39%);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.header{
+    height: 34%;
+    background-image: url("./images/bg-pattern-card.svg");
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    background-image: url("./images/image-victor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 60%;
+    left: 35%;
+}
+.body{
+  
+    height: 33%;
+}
+.body .heading{
+text-align: center;
+padding: 80px;
+
+}
+.body .heading h1{
+   color: hsl(229, 23%, 23%);
+   font-size: 20px;
+}
+.body .heading span{
+    color: hsl(0, 0%, 59%);
+}
+.body .heading p{
+color: hsl(227, 10%, 46%);
+
+}
+.footer{
+    border-top: .5px solid hsl(0, 0%, 90%);
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.footer h5{
+    font-size: 18px;
+    color:  hsl(229, 23%, 23%);
+}
+.footer p{
+font-size: 12px;
+color: hsl(227, 10%, 46%);
+}
