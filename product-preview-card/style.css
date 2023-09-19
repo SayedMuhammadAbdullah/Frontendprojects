@@ -14,6 +14,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 main{
     
@@ -36,6 +37,8 @@ main{
 }
 .desktop-img{
     background-image: url("./images/image-product-desktop.jpg");
+        border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .mobile-img{
     background-image: url("./images/image-product-mobile.jpg");
@@ -46,6 +49,8 @@ main{
     width: 50%;
     height: 450px;
     background-color: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .top{
@@ -143,8 +148,13 @@ color: hsl(228, 12%, 48%);
 }
 .mobile-img{
     display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .card{
     width: 100%;
+     border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 }
