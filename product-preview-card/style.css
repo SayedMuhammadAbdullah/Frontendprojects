@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-properties{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+.container{
+    width: 600px;
+    height: 450px;
+
+    display: flex;
+}
+
+.img{
+    height: 450px;
+    width: 50%;
+}
+.desktop-img{
+    background-image: url("./images/image-product-desktop.jpg");
+}
+.mobile-img{
+    background-image: url("./images/image-product-mobile.jpg");
+    display: none;
+}
+
+.card{
+    width: 50%;
+    height: 450px;
+    background-color: #fff;
+}
+
+.top{
+    width: 100%;
+    height: 10%;
+   
+    padding: 35px 0px 0px 30px;
+}
+.top h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+letter-spacing: 4.93px;
+color: hsl(228, 12%, 48%);
+}
+.middle{
+    width: 100%;
+    height: 70%;
+   
+}
+.p-heading{
+    width: 70%;
+    height: 45%;
+
+    padding: 10px;
+    font-size: 21px;
+    margin-left: 20px;
+}
+.middle h2{
+    font-family: 'Fraunces', serif;
+}
+.p-details{
+    height: 37%;
+  
+    padding: 20px 30px;
+}
+.p-details p{
+    color: hsl(228, 12%, 48%);
+    font-size: 18px;
+}
+.p-price{
+    height: 20%;
+    text-align: center;
+    padding: 15px 0px;
+}
+.p-price .new-price{
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.p-price .old-price{
+
+    font-size: 18px;
+    text-decoration: line-through;
+    margin: 15px;
+    color: hsl(228, 12%, 48%);
+
+}
+
+.bottom{
+    width: 100%;
+    height: 20%;
+
+}
+
+.btn{
+
+}
+.btn button{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+}
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        height: 100vh;
+    }
+.img{
+    width: 100%;
+}
+.desktop-img{
+    display: none;
+}
+.mobile-img{
+    display: block;
+}
+.card{
+    width: 100%;
+}
+}
