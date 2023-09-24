@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;padding: 0;
+    /* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    width:min(1100px,80%);
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+}
+.first{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.heading{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(7, 51, 51); */
+    padding: 40px 30px 0px 70px;
+}
+.heading h1{
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.heading h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.content{
+    height: 40%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 50px 70px;
+}
+.content p{
+    line-height: 25px;
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+}
+.s-card{
+    width: 100%;
+    height: 30%;
+    /* background-color: brown; */
+    justify-content: space-evenly;
+}
+.s-card h5{
+    font-size: 1.5rem;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+.s-card p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+font-weight: 700;
+}
+.second{
+    width: 50%;
+    height: 100%;
+
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+   background-image: url("./images/image-header-desktop.jpg");
+   background-color: hsl(277, 64%, 61%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column-reverse;
+        height: 80vh;
+        width: 80%;
+    }
+    .first{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-evenly;
+        border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+    
+    .heading{
+        padding: 20px;
+    }
+    .content{
+        padding: 30px;
+        height: 30%;
+    }
+    .second{
+        width: 100%;
+        /* height: 100vh; */
+        height: 30%;
+    }
+    .img{
+        background-image: url("./images/image-header-mobile.jpg");
+        height: 100%;
+       
+        border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    }
+    c-card{
+       /* margin-top: 10px; */
+        height: 20%;
+    }
+}
