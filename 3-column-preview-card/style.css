@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{margin: 0;padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+} 
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-height{
+    height: 20%;
+    width: 100%;
+    padding: 30px;
+}
+.m-height{
+    height: 58%;
+    width: 100%;
+    
+}
+.b-height{
+    height: 20%;
+    width: 100%;
+}
+
+
+.main-heading{
+    height: 30%;
+    padding: 30px;
+}
+.main-heading h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 32px;
+}
+.parah{
+    height: 60%;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 20px;
+}
+.parah p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.common-container{
+    height: 100%;
+    width: 80%;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid white;
+    background: none;
+    color: #fff;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color:hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+.bottom{
+    padding: 10px 15px;
+
+}
+main{
+    width: 100%;
+    height: 100vh;
+   
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    width: 800px;
+    height: 400px;
+}
+.first{
+    height: 100%;
+    width: auto;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.second{
+    height: 100%;
+    width: auto;
+    background-color:hsl(184, 100%, 22%);
+}
+.third{
+    height: 100%;
+    width: auto;
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media(max-width:600px){
+    main{
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 60%;
+        flex-direction: column;
+    }
+    .first{
+        height: 100vh;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .second{
+        height: 100vh;
+    }
+    .third{
+        height: 100vh;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
+@media (max-width:300px){
+.container{
+    width: 100%;
+}
+.btn{
+    width: 120px;
+}
+}
+@media(max-width:150px){
+    .bottom{
+        padding: 70px 0px;
+    }
+}
