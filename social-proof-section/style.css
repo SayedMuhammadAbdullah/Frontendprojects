@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+
+.flex{
+    display: flex;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+.first{
+    height: 50vh;
+    width: 100%;
+   
+}
+.heading-container{
+   width: 50%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-container{
+ height: 250px;
+ 
+    flex-direction: column;
+    width: 430px;
+ 
+  
+}
+
+.heading-container .text-container h1{
+font-size: 6rem;
+color:hsl(300, 43%, 22%);
+
+}
+.heading-container .text-container p{
+    font-size: 1.8rem;
+    margin-top:25px ;
+    color: hsl(303, 10%, 53%);
+    line-height: 20px;
+    }
+.rating-container{
+    width: 50%;
+    height: 100%;
+   
+    justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+}
+.card{
+    width: 400px;
+    height: 50px;
+      font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+}
+
+
+.rating-2{
+    margin-left: 60px;
+}
+.rating-3{
+    margin-left: 120px;
+}
+
+.box span{
+    margin-left: 10px;
+}
+.second{
+    height: 50vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.auther-box{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color:hsl(300, 43%, 22%);
+ 
+}
+.auther-box .top{
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+.top .profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left:20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top .auther-name{
+    margin-left: 15px;
+}
+.auther-name .bg-soft-pink{
+    color: hsl(333, 80%, 67%);
+    font-weight: normal;
+}
+.auther-name p{
+font-size: 1.5rem;
+margin: 4px;
+font-weight: 500;
+color: #fff;
+
+}
+.auther-box .bottom{
+    height: 60%;
+    padding:20px;
+}
+
+.bottom p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+
+
+.auther-1 .profile{
+    background-image: url("./images/image-colton.jpg");
+
+}
+
+
+
+
+.auther-2{
+    margin-top: 30px;
+}
+.auther-2 .profile{
+    background-image: url("./images/image-irene.jpg");
+
+}
+.auther-3{
+    margin-top: 60px;
+}
+
+.auther-3 .profile{
+    background-image: url("./images/image-anne.jpg");
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+
+    main{
+        height: 100%;
+    }
+    .first{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .heading-container{
+        width: 100%;
+        height: 50%;
+        
+    }
+    
+    .rating-container{
+        width: 100%;
+        height: 50%;
+    }
+   
+    .rating-2{
+        margin-left: 0px !important;
+    }
+    .rating-3{
+        margin-left: 0px !important;
+    }
+    .second{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .auther-2{
+        margin-top: 0px !important;
+    }
+    .auther-3{
+        margin-top: 0px !important;
+    }
+    
+}
+
+
+@media( max-width:500px)
+{
+    .text-container{
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+}
