@@ -21,7 +21,7 @@ main{
 .container{
     width:min(1100px,80%);
     height: 400px;
-    /* background-color: red; */
+ 
     display: flex;
 }
 .first{
@@ -49,7 +49,7 @@ main{
 .content{
     height: 40%;
     width: 100%;
-    /* background-color: aquamarine; */
+    
     padding: 50px 70px;
 }
 .content p{
@@ -61,7 +61,7 @@ main{
 .s-card{
     width: 100%;
     height: 30%;
-    /* background-color: brown; */
+   
     justify-content: space-evenly;
 }
 .s-card h5{
@@ -118,9 +118,19 @@ font-weight: 700;
     }
     .second{
         width: 100%;
-        /* height: 100vh; */
         height: 30%;
+        position:relative;
     }
+    .second::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 67%, 61%, .8);
+    mix-blend-mode: multiply;
+}
     .img{
         background-image: url("./images/image-header-mobile.jpg");
         height: 100%;
