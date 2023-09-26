@@ -109,6 +109,7 @@ color:hsl(178, 100%, 50%);
 .profile{
     width: 40px;
     height: 40px;
+        border: 1px solid white;
     border-radius: 50%;
     background-image: url("./images/image-avatar.png");
 background-size: cover;
