@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+color: #fff;
+}
+:root{
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+   
+}
+html{
+    font-size:clamp(42% ,.7vw,62.5%) ;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Violet);
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    height: 100px;
+}
+header img{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 200px;
+}
+main {
+    width: 100vw;
+    height:calc(100vh - 145px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+    width: 45vw;
+    height: 80%;
+}
+
+.content{
+    width: 40vw;
+    max-width: 540px;
+
+padding: 20px;
+}
+
+.heading h1{
+    font-size: max(26px,3.2rem);
+   
+}
+.parah p{
+    font-size:15px;
+}
+.content button{
+    color: var(--Violet);
+    color: 1.4rem;
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    margin: 15px 0;
+}
+.content button:hover{
+    color: #fff;
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    
+}
+.social-icons{
+    display: flex;
+    width: 130px;
+    margin: 0 25px 0 auto;
+}
+.icon i:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+    border-radius:50% ;
+cursor: pointer;
+}
+.social-icons .icon{
+width: 35px;
+height: 35px;
+border-radius: 50%;
+border: 1px solid white;
+margin-right: 10px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.social-icons .icon .fa-brands{
+font-size: 20px;
+
+    }
+
+@media (max-width:715px)
+{
+    header img{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+       
+    }
+    img{
+        width: 80vw;
+    }
+    .content{
+        width: 80vw;
+        text-align: center;
+    }
+}
