@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+p{
+    font-size: 1.2rem;
+color: var(--Dark-grayish-blue);
+}
+h3{
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: normal;
+}
+h3:hover{
+    color: var(--Soft-red);
+}
+:root {
+    /* text */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Gradient */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    /* Divider */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+main {
+    background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #fff;
+    width: 800px;
+    height: 450px;
+    border-radius: 25px;
+    position: relative;
+
+}
+.img{
+   background-image: url("./images/illustration-woman-online-desktop.svg");
+   width: 60%;
+   height: 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   left: -80px;
+   top: 10%;
+   background-size: contain;
+}
+.img-box{
+    width: 160px;
+    height: 160px;
+    background-image: url("./images/illustration-box-desktop.svg");
+    position: relative;
+    top: 29%;
+    left: -15px;
+}
+.content{
+    width: 50%;
+    height: 100%;
+position: absolute;
+right: 0;
+padding: 20px 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+.question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.question-title img{
+    width: 10px;
+    height: 7px;
+    transition: .1s ease-in;
+}
+.ans{
+    display: none;
+}
+.card.active .ans{
+    display: block;
+}
+.card.active h3{
+    font-weight: 700;
+}
+.card.active img{
+    transform: rotate(180deg);
+}
+
+@media (max-width:675px){
+    main{
+        height: auto !important;
+    }
+.container{
+    width: 80%;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+}    
+.img{
+    width: min(100%,320px);
+    height: 30vh;
+  position: static;
+    background-size: contain;
+    margin: 0 auto;
+}
+.img-box{
+    background-size: contain;
+    width: 130px;
+    height: 120px;
+    top: 35%;
+    left: -2%;
+}
+.content{
+    width: 100%;
+height: auto;
+position: static;
+}
+}
+@media (max-width:250px){
+    .img-box{
+        display: none;
+    }
+}
