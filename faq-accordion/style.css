@@ -107,7 +107,7 @@ justify-content: space-evenly;
     }
 .container{
     width: 80%;
-    height: 100vh !important;
+    height: auto !important;
     display: flex;
     flex-direction: column;
 }    
