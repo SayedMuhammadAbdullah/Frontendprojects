@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Figtree', sans-serif;
+}
+main {
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background: #fff;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+    box-shadow: 6px 6px black;
+}
+.container .top-img {
+    background-image: url('./assets/images/illustration-article.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35.5%;
+    width: 80%;
+    margin: 15px auto 5px auto;
+    border-radius: 10px;
+}
+.container .bottom {
+    height: 60%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bottom .yellow {
+    padding: 5px 8px;
+    height: 25px;
+    width: 70px;
+    font-size: 1.2rem;
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bold;
+}
+.bottom h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.bottom h3:hover {
+    color: hsl(47, 88%, 63%);
+}
+.bottom .date {
+    font-size: 1rem
+}
+.bottom .parah {
+    font-size: 1.3rem;
+    line-height: 20px;
+    color: hsl(0, 0%, 50%);
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+.author .author-img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 10px;
+    background-image: url('./assets/images/image-avatar.webp');
+    background-size: cover;
+}
+.author .author-name {
+    font-weight: 900;
+    font-size: 1rem;
+}
