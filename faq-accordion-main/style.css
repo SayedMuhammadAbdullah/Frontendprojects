@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+:root{
+   --White: hsl(0, 0%, 100%);
+--Light-pink: hsl(275, 100%, 97%);
+--Grayish-purple: hsl(292, 16%, 49%);
+--Dark-purple: hsl(292, 42%, 14%);
+}
+main{
+    background-color: var(--Light-pink);
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+}
+.bg-img{
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    width: 100%;
+    height: 300px;
+}
+.container{
+    width: 475px;
+    height: 450px;
+    border-radius: 15px;
+    bottom: 150px;
+    position: relative;
+    background-color: var(--White);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.heading .star-img{
+    background-image: url('./assets/images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 30px;
+    
+    margin-right: 5px;
+}
+.heading h1{
+    font-size: 4rem;
+    color: var(--Dark-purple);
+}
+
+.content{
+    /* background: beige; */
+    height: 90%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.quest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.content h3{
+    font-size: 1.5rem;
+}
+.content .ans{
+    display: none;
+}
+.content .ans p{
+    font-size: 1.6rem;
+    color: var(--Grayish-purple);
+    margin-top: 10px;
+}
+.img{
+    background-image: url('./assets/images/icon-plus.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.card.active .img{
+    background-image: url('./assets/images/icon-minus.svg');
+}
+.card.active .ans{
+    display: block !important;
+}
+
+@media(max-width:500px){
+    .bg-img{
+        background-image: url('./assets/images/background-pattern-mobile.svg');
+    }
+    .quest{
+        justify-content: space-evenly;
+    }
+    .content h3{
+        width: 80%;
+        /* margin-top: 10px; */
+    }
+}
